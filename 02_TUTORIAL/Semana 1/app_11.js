@@ -4,7 +4,7 @@ const port = 3011;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
-  res.end('<!DOCTYPE html> <head> <title>Etapa 1 - Setup Inicial</title></head> \
+  res.end('<!DOCTYPE html> <head> <meta charset="UTF-8"> <title>Etapa 1 - Setup Inicial</title></head> \
               <body>\
                 <div id="main"> \
                        <h1> Etapa 1 - INSTALAÇÃO - Servidor Node.js </h1> \

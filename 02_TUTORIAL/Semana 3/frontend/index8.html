@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, 
+	           initial-scale=1, maximum-scale=1" />
+	<title>Etapa 3</title>
+	<link rel="stylesheet" href="style7.css" />	
+
+</head>
+<body>
+	<canvas id="graficoRadar" width="400" height="400"></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+	<script>
+		function aumenta(eixo){
+			var setdados = document.getElementById("setdados").value;
+			graficoRadar.data.datasets[setdados].data[eixo]++;
+			graficoRadar.update();		
+		};
+		function diminui(eixo){
+			var setdados = document.getElementById("setdados").value;
+			graficoRadar.data.datasets[setdados].data[eixo]--;
+			graficoRadar.update();		
+		};
+		var ctx = document.getElementById('graficoRadar').getContext('2d');
+		var graficoRadar = new Chart(ctx,{
+			type: 'radar',
+			data: {
+				labels:['A','B','C','D','E','F'],
+				datasets: [
+					{
+						label: 'radar 1',
+						data: [15,20,30,40,20,35],
+						borderColor: 'rgb(255, 0, ,132)',
+						backgroundColor: 'rgba(255, 99, 132, 0.2)'
+					},
+					{
+						label: 'radar 2',						
+						data: [50,60,75,43,70,47],
+						borderColor: 'rgb(20, 0, ,132)',
+						backgroundColor: 'rgba(10, 162, 235, 0.2)'
+					}
+				]
+			},
+			options: {
+				elements: {
+					line: {
+						borderWidth: 3
+					}
+				},
+				scales: {
+					r :{
+						beginAtZero: true
+					}
+				}
+			},
+		});
+	</script>
+
+	<div>
+		<table>
+			<tr> <td>  <input type="button" value="Aumenta A" onclick="aumenta(0)" /> </td>  
+				 <td>  <input type="button" value="Aumenta B" onclick="aumenta(1)" /> </td>    
+				 <td>  <input type="button" value="Aumenta C" onclick="aumenta(2)" /> </td>   
+				 <td>  <input type="button" value="Aumenta D" onclick="aumenta(3)" /> </td>   
+				 <td>  <input type="button" value="Aumenta E" onclick="aumenta(4)" /> </td>  
+				 <td>  <input type="button" value="Aumenta F" onclick="aumenta(5)" /> </td>    
+			</tr>
+
+			<tr> <td>  <input type="button" value="Diminui A" onclick="diminui(0)" /> </td>  
+			 	 <td>  <input type="button" value="Diminui B" onclick="diminui(1)" /> </td>    
+				 <td>  <input type="button" value="Diminui C" onclick="diminui(2)" /> </td>   
+				 <td>  <input type="button" value="Diminui D" onclick="diminui(3)" /> </td>   
+				 <td>  <input type="button" value="Diminui E" onclick="diminui(4)" /> </td> 
+				 <td>  <input type="button" value="Diminui F" onclick="diminui(5)" /> </td>      
+		    </tr>
+			<tr>
+				<td colspan = "3">
+					<input id="setdados"  type="number" value="0" />
+				</td>
+			</tr>
+		</table>
+
+
+	</div>
+</body>
+</html>

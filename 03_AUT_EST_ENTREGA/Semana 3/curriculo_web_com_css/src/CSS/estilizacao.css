@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    font-family: Arial;
+}
+
+body {
+    background-color: #E9E9E9;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-bar {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0;
+    width: auto;
+
+    list-style-type: none;
+    font-family: Arial;
+    background-color: #2B4570;
+    border-radius: 2px;
+    justify-content: center;
+    /* arredonda a borda */
+
+    position: absolute;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+
+.nav-bar-item {
+    display: inline;
+}
+
+.nav-bar-link {
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+p {
+    font-family: Arial;
+}
+
+#bloco {
+    padding: 8px;
+    margin: 8px;
+    display: block;
+}
+
+#teste {
+    display: block;
+    width: 100vw !important;
+}

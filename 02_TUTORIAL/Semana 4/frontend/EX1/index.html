@@ -11,76 +11,33 @@
 </head>
 <body>
 	<div id="main">
-		<h1>ETAPA 4 - Exercicio TESTE 01 - JSON </h1>
+		<h1>ETAPA 4 - Exercicio 1 - Casas Hogwarts - JSON </h1>
 		JQuery e JSON
 		<div id="calc" class="sections">
-			<h3>Exemplo com JSON (JavaScrpt Object Notation</h3>
-			
-
-			<div class="codigoJS">
-				var ModuloSkynet = {  </br>
-					avaliacaoQI: 0,     </br>
-					perguntaTeste: "A ser inserida",    </br>
-					respostas: ["A - qq coisa", "B - qq coisa"],    </br>
-					correta: 0,    </br>
-					respondida: 0    </br>
-				};
-
-			</div>
-
-			<h3>Gerando O objeto acima como JSON: </h3>
-			<button id="IDgeraJSON" class="button-calc"> Converter JSON para texto puro:</button>
-			<div id="IDtoJSON" class="codigoJS"> </div>
-
 	
-			<button id="IDexecutaOBJ" class="button-calc"> Aumentando o QI em 10</button>
+			<h3>Adicione uma disciplina: </h3>
+
+			<table>					
+				<tr> <td> Nome da disciplina:  <input id="IDnomeDis"  type="text" />     </td></tr>				
+				<tr> <td> Peso pra Grifinoria: <input id="IDpesoGrif" type="number" />   </td></tr>
+				<tr> <td> Peso pra Sonserina:  <input id="IDpesoSon"  type="number" />   </td></tr>
+				<tr> <td> Peso pra Corvinal:   <input id="IDpesoCorv" type="number" />   </td></tr>
+				<tr> <td> Peso pra lufalufa:   <input id="IDpesoLuf" type="number" />   </td></tr>
+			</table>
+
+
+			<button id="IDNovaDisciplina" class="button-calc"> Adicionar </button>
+
+			<button id="IDcalculaMedias" class="button-calc"> Calcular Medias </button>
+
+			<button id="IDgeraJSONCasas" class="button-calc"> Gera JSON das 4 casas </button>			
+			<div id="IDtoJSON1" class="codigoJS"> </div>
+			
 			<div id="IDtoJSON2" class="codigoJS"> </div>
 
-
-			<button id="IDmexeJSON" class="button-calc"> Tentar fazer o JSON executar algo assim:</button>
-			<div class="codigoJS">
-				$("#IDmexeJSON").click(function (evento){  </br>
-					evento.preventDefault();                </br>
-					convertidoJSON = JSON.stringify(ModuloSkynet); <br>
-					convertidoJSON.avaliacaoQI = 100;	          </br>
-			});
-
-			</div>
 			<div id="IDtoJSON3" class="codigoJS"> </div>
 
-			<button id="IDmexeJSON2" class="button-calc"> ou algo assim:</button>
-			<div class="codigoJS">
-				$("#IDmexeJSON").click(function (evento){  </br>
-					evento.preventDefault();                </br>
-					convertidoJSON = JSON.stringify(ModuloSkynet); <br>
-					convertidoJSON.atualizaQI()        </br>
-			});
-
-			</div>
-			<div id="IDtoJSON31" class="codigoJS"> </div>
-
-
-
-			<textarea id="IDJSONtoConvert" rows="13" cols="50" class="codigoJS" > 
-				{
-					"avaliacaoQI": 200, 
-					"perguntaTeste": "Voce existe ?",
-					"respostas": ["A - SIM", 
-								 "B - NAO SEI", 
-								 "C - SIM pois penso"],
-					 "correta": 3,
-					 "respondida": 0
-				 }
-			</textarea>
-
-
-			<button id="IDleJSON" class="button-calc"> Converter JSON para OBJETO:</button>
 			<div id="IDtoJSON4" class="codigoJS"> </div>
-
-
-
-
-	
 
 		</div>
 

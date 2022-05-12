@@ -3,8 +3,13 @@ Minhas entregas estão definidas aqui:
 
 ## Autoestudo 
 <!-- <a href="#">Placeholder</a> -->
-<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%203/lancamento_vertical">Semana 3 - Ex 1 - Lançamento vertical</a>
-<a href="#">Semana 4 - BubbleSort</a>
+Links para repositórios:
+<br/>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%203/lancamento_vertical">Semana 3 - Lançamento vertical</a>
+<br/>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/05_AUT_EST_EX_OPCIONAIS/Semana4/bubblesort">Semana 4 - BubbleSort</a>
+<br/>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/05_AUT_EST_EX_OPCIONAIS/Semana4/caixa_eltronico">Semana 4 - Caixa eletrônico</a>
 
 ## Obrigatórios 
 <a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/Semana2/curriculo_web_com_html"> 29/04/2022 - Entrega semana 2 - Repositório</a>

@@ -6,8 +6,8 @@ Minhas entregas estão definidas aqui:
 <a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%203/lancamento_vertical">Semana 3 - Ex 1 - Lançamento vertical</a>
 
 ## Obrigatórios 
-<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/Semana%202/curriculo_web_com_html"> 29/04/2022 - Entrega semana 2 </a>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/Semana2/curriculo_web_com_html"> 29/04/2022 - Entrega semana 2 </a>
 <br />
-<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/Semana%203/curriculo_web_com_css"> 07/05/2022 - Entrega semana 3</a>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/Semana3/curriculo_web_com_css"> 07/05/2022 - Entrega semana 3</a>
 <br />
-<a href="">
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/Semana4/curriculo_web_com_js"> 13/05/2-22 - Entrega semana 4 </a>

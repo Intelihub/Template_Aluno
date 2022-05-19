@@ -1,5 +1,5 @@
 function Navbar() {
-    $('teste').append(' \
+    $('nav-bar-function').append(' \
         <ul class="nav-bar"> \
             <li class="nav-bar-item"> \
                 <a class="nav-bar-link" href="HTML/informacoes_pessoais.html">Informações \
@@ -16,8 +16,10 @@ function Navbar() {
                 <a class="nav-bar-link" href="HTML/competencias.html">Competências</a> \
             </li> \
         </ul>'
-    )
-}
+    );
+};
+
+
 
 var active = false
 

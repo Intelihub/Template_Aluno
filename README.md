@@ -5,7 +5,7 @@ Minhas entregas estão definidas aqui:
 <!-- <a href="#">Placeholder</a> -->
 Links para repositórios:
 <br/>
-<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/04_AUT_EST_EX_OBRIGATORIOS/SEMANA3/lancamento_vertical">Semana 3 - Lançamento vertical</a>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/SEMANA3/lancamento_vertical">Semana 3 - Lançamento vertical</a>
 <br/>
 <a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/05_AUT_EST_EX_OPCIONAIS/SEMANA4/bubblesort">Semana 4 - BubbleSort</a>
 <br/>
@@ -16,7 +16,7 @@ Links para repositórios:
 <br />
 <a href="https://thomegiovana.github.io/repositorioGiovanaThome/03_AUT_EST_ENTREGA/SEMANA2/curriculo_web_com_html/src/"> 29/04/2022 - Entrega semana 2 - GitPage</a>
 
-<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/SEMANA3/curriculo_web_com_css"> 07/05/2022 - Entrega semana 3 - Repositório</a>
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/SEMANA3"> 07/05/2022 - Entrega semana 3 - Repositório</a>
 <br />
 <a href="https://thomegiovana.github.io/repositorioGiovanaThome/03_AUT_EST_ENTREGA/SEMANA3/curriculo_web_com_css/src/"> 07/05/2022 - Entrega semana 3 - GitPage</a>
 

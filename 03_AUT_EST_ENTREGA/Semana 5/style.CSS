@@ -16,11 +16,6 @@ body {
 	color: var(--text-color);
 }
 
-.checkbox {
-	opacity: 0;
-	position: absolute;
-}
-
 .label {
 	background-color: var(--label-color);
 	border-radius: 50px;
@@ -54,9 +49,13 @@ body {
     margin-left: 20px;
 }
 
-#subtitle {
+.subtitle {
     text-align: center;
     background-color: gray;
+}
+
+.subtitle.sub-dark {
+	background-color: #123;
 }
 
 p {

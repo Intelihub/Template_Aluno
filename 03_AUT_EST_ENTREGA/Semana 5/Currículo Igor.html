@@ -34,7 +34,7 @@
         </div>
         <div class="col-2 col-md-1 col-xl-1">
             <div>
-                <label class="label" for="chk">
+                <label class="label">
                     <div class="ball"></div>
                 </label>
             </div>
@@ -42,6 +42,7 @@
          <script>
              $('label').click(function(){
                 $('body').toggleClass('theme-dark');
+                $('.subtitle').toggleClass('sub-dark')
                 $('.ball').toggleClass('bl-dark');
              })
          </script>
@@ -53,24 +54,24 @@
 
     <div class="row">
         <div class="col-12 col-md-12 col-xl-12">
-            <h3 id="subtitle">Perfil Profissional</h3>
+            <h3 class="subtitle">Perfil Profissional</h3>
             <p>
                 Técnico em eletrônica e programador de Godot dedicado e proativo.
             </p>
                 
-            <h3 id="subtitle">Experiência</h3>
+            <h3 class="subtitle">Experiência</h3>
             <p>Desenvolvi ativamente com a equipe "The Finace Team", em parceria
                 com o banco"BTG Pactual", o jogo eletrônico "The Finance Health". 
             </p>
 
-            <h3 id="subtitle">Formação</h3>
+            <h3 class="subtitle">Formação</h3>
             <ul>
                 <li>Ensino Médio Completo</li>
                 <li>Técnico em eletrônica</li>
                 <li>Aprovado no módulo 1 da Inteli</li>
             </ul>
 
-            <h3 id="subtitle">Habilidades</h3>
+            <h3 class="subtitle">Habilidades</h3>
             <ul>
                 <li>Resolução de Problemas</li>
                 <li>Programação</li>

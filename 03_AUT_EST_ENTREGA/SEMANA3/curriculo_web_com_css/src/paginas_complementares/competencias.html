@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>competencias</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script>
+        app.get("/", function (req, res) {
+            res.sendFile(__dirname + "competencias.html");
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Currículo WEB</h1>
+    <div id="teste">
+        <ul class="nav-bar">
+            <li class="nav-bar-item">
+                <a class="nav-bar-link" href="/paginas_complementares/informacoes_pessoais.html">Informações
+                    pessoais</a>
+            </li>
+            <li class="nav-bar-item">
+                <a class="nav-bar-link" href="/paginas_complementares/informacoes_contato.html">Informações de
+                    contato</a>
+            </li>
+            <li class="nav-bar-item">
+                <a class="nav-bar-link" href="/paginas_complementares/formacao_academica.html">Formação acadêmica</a>
+            </li>
+            <li class="nav-bar-item">
+                <a class="nav-bar-link selected" href="/paginas_complementares/competencias.html">Competências</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="bloco">
+        <p class="info">Python | iniciante</p>
+        <p class="info">HTML e CSS | iniciante</p>
+        <p class="info">Fluência em inglês</p>
+    </div>
+</body>
+
+</html>

@@ -23,3 +23,7 @@ Links para repositórios:
 <a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/SEMANA4/curriculo_web_com_js"> 13/05/2-22 - Entrega semana 4  - Repositório</a>
 <br />
 <a href="https://thomegiovana.github.io/repositorioGiovanaThome/03_AUT_EST_ENTREGA/SEMANA4/curriculo_web_com_js/src/"> 13/05/2-22 - Entrega semana 4  - GitPage</a>
+
+<a href="https://github.com/ThomeGiovana/repositorioGiovanaThome/tree/main/03_AUT_EST_ENTREGA/SEMANA5/curriculo_web_com_jquery"> 20/05/2-22 - Entrega semana 5  - Repositório</a>
+<br />
+<a href="https://thomegiovana.github.io/repositorioGiovanaThome/03_AUT_EST_ENTREGA/SEMANA5/curriculo_web_com_jquery/src/"> 20/05/2-22 - Entrega semana 5  - GitPage</a>

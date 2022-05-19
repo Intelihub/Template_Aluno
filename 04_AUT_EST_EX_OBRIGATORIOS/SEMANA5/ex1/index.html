@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Exercício 1</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" placeholder="Número 1" id="n1">
+        <br>
+        <input type="number" placeholder="Número 2" id="n2">
+        <br>
+        Operação:
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="soma" checked>
+            <label for="soma"> + </label>
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="diminuicao">
+            <label for="diminuicao"> - </label>
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="multiplicacao">
+            <label for="multiplicacao"> * </label>
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="divisao">
+            <label for="divisao"> / </label>
+            <!-- <input type="radio" class="form-check-input" name="flexRadioDefault" id="barrabarra">
+            <label for="barrabarra"> // </label> -->
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="resto">
+            <label for="resto"> % </label>
+        </div>
+        <br>
+        <input type="button" value="Calcular" onclick="Calcular()">
+        <p id="resultado"></p>
+    </form>
+</body>
+
+</html>

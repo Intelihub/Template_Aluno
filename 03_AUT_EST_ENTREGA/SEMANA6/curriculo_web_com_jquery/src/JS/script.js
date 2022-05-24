@@ -1,5 +1,5 @@
-function NavbarIndex() {
-    $('.nav-bar-function').append(' \
+function Navbar() {
+    $('nav-bar-function').append(' \
         <ul class="nav-bar"> \
             <li class="nav-bar-item"> \
                 <a class="nav-bar-link" href="HTML/informacoes_pessoais.html">Informações \
@@ -17,29 +17,9 @@ function NavbarIndex() {
             </li> \
         </ul>'
     );
-    console.log('teste');
 };
-function Navbar() {
-    $('.nav-bar-function').append(' \
-        <ul class="nav-bar"> \
-            <li class="nav-bar-item"> \
-                <a class="nav-bar-link" href="informacoes_pessoais.html">Informações \
-                    pessoais</a> \
-            </li> \
-            <li class="nav-bar-item"> \
-                <a class="nav-bar-link" href="informacoes_contato.html">Informações de \
-                    contato</a> \
-            </li> \
-            <li class="nav-bar-item"> \
-                <a class="nav-bar-link" href="formacao_academica.html">Formação acadêmica</a> \
-            </li> \
-            <li class="nav-bar-item"> \
-                <a class="nav-bar-link" href="competencias.html">Competências</a> \
-            </li> \
-        </ul>'
-    );
-    console.log('teste');
-};
+
+
 
 var active = false
 

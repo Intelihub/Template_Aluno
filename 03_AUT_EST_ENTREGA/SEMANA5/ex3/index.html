@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <form action="">
+        Insira a lista de números separados por ",":
+        <input type="text" id="listaNumeros">
+        <br>
+        Insira o valor foco:
+        <input type="text" id="valorFoco">
+        <br>
+        <input type="button" value="Calcular" id="buttonCalcular" onclick="Calcular()">
+        <br>
+        <p id="listaOrdenada">Lista ordenada: </p>
+        <p id="posValorFoco">Posição do valor foco: </p>
+        <p id="posValorFocoArray">Posição do foco em relação ao Array: </p>
+    </form>
 </body>
+
 </html>

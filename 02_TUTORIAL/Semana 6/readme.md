@@ -1,6 +1,6 @@
-# Etapa 5 - Introdução a conceitos de banco de dados e backend
+# Etapa 6 - CRUD: Create, Read, Update, Delete
 
-Essa etapa tem por objetivo introduzir conceitos de banco de dados e backend
+Essa etapa tem por objetivo introduzir conceitos de criação, leitura, atualização e deleção de dados no banco de dados
 
 ## Instruções
 

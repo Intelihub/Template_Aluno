@@ -1,0 +1,25 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Template de projeto",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "1.4.6",
+    "dotenv": "^16.0.1",
+    "ejs": "3.1.7",
+    "express": "^4.18.1",
+    "lru-cache": "7.9.0",
+    "multer": "1.4.4",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.12",
+    "@types/express-serve-static-core": "4.17.20",
+    "@types/node": "14.14.21"
+  }
+}

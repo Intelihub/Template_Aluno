@@ -1,0 +1,1 @@
+﻿//Script com jQuery no arquivo html

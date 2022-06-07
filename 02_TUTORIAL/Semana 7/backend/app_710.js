@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const sqlite3 = require('sqlite3').verbose();
-const DBPATH = 'dbUser.db';
+const DBPATH = 'AULA_08_ETAPA07.db';
 
 const hostname = '127.0.0.1';
 const port = 3071;
@@ -11,12 +11,8 @@ const app = express();
 
 /* Servidor aplicação */
 
-app.use(express.static("../frontend/src1"));
+app.use(express.static("../frontend/src4"));
 
-
-/* Definição dos endpoints */
-
-/******** CRUD ************/
 
 app.use(express.json());
 
@@ -26,7 +22,7 @@ app.get('/users', (req, res) => {
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-  var sql = 'SELECT * FROM tbUser ORDER BY title COLLATE NOCASE';
+  var sql = 'SELECT ESCOLA.NOME esc,ALUNO.NOME alu,ALUNO.MEDIA FROM ALUNO,ESCOLA  WHERE ESCOLA.CNPJ = ALUNO.CNPJ  AND ALUNO.MEDIA >3';
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
 		    throw err;

@@ -89,4 +89,18 @@ function TestGETDB(){
     $(getDB).append("<br /><br />" + JSON.stringify(resposta));
     $(getDB).append("<br /><br />* Seleção do atributo 'title' do primeiro usuario:<br />" + resposta[0].title);
     //console.log(xhttp.responseText);
+};
+function TestGETDB2(){
+    var url = "http://127.0.0.1:3071/users_individuais";
+    var resposta;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", url, false);
+    var dadoEnviado = {dados: "oi mamae"};
+    xhttp.send(JSON.stringify(dadoEnviado));//A execução do script pára aqui até a requisição retornar do servidor
+
+
+    
+    $(getDB2).append("<br /><br />" + xhttp.responseText);
+
 }

@@ -1,33 +1,37 @@
-﻿function PhoneNumber() {
-    // grab the value of what the user is typing into the input
-    const inputField = document.getElementById('phone');
-  
-    // next, we're going to format this input with the `formatPhoneNumber` function, which we'll write next.
-    const formattedInputValue = FormatPhoneNumber(inputField.value);
-  
-    // Then we'll set the value of the inputField to the formattedValue we generated with the formatPhoneNumber
-    inputField.value = formattedInputValue;
-  }
+function PhoneNumber() {
+    //Pega os valores do input e os separa em array
+    var phone = document.getElementById("phone").value;
+    var phonesplit = phone.split('');
+    console.log(phonesplit);
 
-function FormatPhoneNumber(value) {
-    // if input value is falsy eg if the user deletes the input, then just return
-    if (!value) return value;
-  
-    // clean the input for any non-digit values.
-    const phoneNumber = value.replace(/[^\d]/g, '');
-  
-    // phoneNumberLength is used to know when to apply our formatting for the phone number
-    const phoneNumberLength = phoneNumber.length;
-  
-    // we need to return the value with no formatting if its less than four digits
-    // this is to avoid weird behavior that occurs if you format the area code too early
-    if (phoneNumberLength < 4) return phoneNumber;
-  
-    // if phoneNumberLength is greater than 4 and less the 7 we start to return the formatted number
-    if (phoneNumberLength < 7) {
-      return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2)}`;
-    }
-  
-    // finally, if the phoneNumberLength is greater then seven, we add the last bit of formatting and return it.
-    return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2,7)}-${phoneNumber.slice(7, 10)}`;
-  }
+    //Verifica se cada elemento do array é o valor requerido(envia um alert se não)
+    if (phonesplit[0] != '(') {
+        alert("formatacao do DDD incoreta");
+    } else if (phonesplit[3] != ')') {
+        alert("formatacao do DDD incoreta")
+    } else if (phonesplit[9] != '-') {
+        alert("formatacao do numero incoreta")
+    } else if (isNaN(phonesplit[1])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[2])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[4])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[5])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[6])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[7])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[8])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[10])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[11])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[12])) {
+        alert("nao digitou numero")
+    } else if (isNaN(phonesplit[13])) {
+        alert("nao digitou numero")
+    } else alert("Parabéns"); //Se cada elemento do array for o valor requerido, então é dado o parabéns
+}

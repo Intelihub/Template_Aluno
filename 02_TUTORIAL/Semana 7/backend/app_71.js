@@ -11,7 +11,7 @@ const app = express();
 
 /* Servidor aplicação */
 
-app.use(express.static("../frontend/"));
+app.use(express.static("../frontend/src1"));
 
 
 /* Definição dos endpoints */
@@ -32,6 +32,50 @@ app.get('/users', (req, res) => {
 		    throw err;
 		}
 		res.json(rows);
+	});
+	db.close(); // Fecha o banco
+});
+
+
+
+// Retorna todos registros (é o R do CRUD - Read)
+app.post('/users_individuais',urlencodedParser, (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Content-Type', 'text/html');
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+  	var sql = 'SELECT * FROM tbUser ORDER BY title COLLATE NOCASE';
+	db.all(sql, [],  (err, rows ) => {
+		if (err) {
+		    throw err;
+		}
+	//	res.write("<!DOCTYPE html> <head> <title> Resultados </title></head> <body>");
+		console.log(req.dados);
+		res.write("<table border='5'>");
+		var cabecalho = Object.keys(rows[0]); 
+		res.write("<tr>");
+		for(var j=0 ; j < cabecalho.length; j++){
+			res.write("<td>");				
+			res.write(String(cabecalho[j]));
+
+			res.write("</td>");
+		}
+		res.write("</tr>");		
+
+
+		for(var i=0 ; i < rows.length ; i++){
+			var linha = Object.values(rows[i]); 
+			res.write("<tr>");
+			for(var j=0 ; j < linha.length; j++){
+				res.write("<td>");				
+				res.write(String(linha[j]));
+				res.write("</td>");
+			}
+			res.write("</tr>");
+		}
+		
+		res.write("</table>");
+		res.write("</body> </html>");
+		res.end();
 	});
 	db.close(); // Fecha o banco
 });

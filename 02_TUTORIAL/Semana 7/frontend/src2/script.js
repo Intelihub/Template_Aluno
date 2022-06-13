@@ -2,7 +2,7 @@
 
 
 $(document).ready(() => {
-    users.list();
+    usersx.list();
 });
 
 
@@ -31,6 +31,28 @@ var users = {
     }
     
 };
+
+var usersx = {
+    
+    list() {
+        $.ajax({
+            url: api + '/users',
+            type: 'GET',
+            success: data => {
+                var tx = '';
+                data.forEach(element => {
+                        tx += '<div class="user">';
+                        tx += '<div class="title">' + element.title + '</div>';
+                        tx += '</div>';
+                });
+                $('#main').html(tx);
+            }
+        });
+        
+    }
+    
+};
+
 
 var user = {
 

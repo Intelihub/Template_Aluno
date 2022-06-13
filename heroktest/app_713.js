@@ -11,7 +11,7 @@ const app = express();
 
 /* Servidor aplicação */
 
-app.use(express.static("./frontend/src5"));
+app.use(express.static("./"));
 
 
 /* Definição dos endpoints */

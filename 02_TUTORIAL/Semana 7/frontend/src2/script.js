@@ -62,7 +62,7 @@ var user = {
             if (title.trim() != '') {
                 $.ajax({
                     type: 'POST',
-                    url: api + '/userinsert',
+                    url: 'http://127.0.0.1:3071'+ '/userinsert',
                     data: {title: title},
                 }).done(function () {
                     users.list();
@@ -83,7 +83,7 @@ var user = {
             if (title.trim() != '') {
                 $.ajax({
                     type: 'POST',
-                    url: api + '/userupdate',
+                    url: 'http://127.0.0.1:3072' + '/userupdate',
                     data: {title: title, userId: userId},
                 }).done(function () {
                     users.list();

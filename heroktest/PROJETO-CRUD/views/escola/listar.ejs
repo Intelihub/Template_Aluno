@@ -1,0 +1,20 @@
+<%- include("../cabecalho") %>
+
+<div>
+	<a href="/escola/listar?ordenar=nome">LISTAR POR NOME</a> |
+	<a href="/escola/listar?ordenar=email">LISTAR POR EMAIL</a> |
+	<a href="/escola/listar?ordenar=id">LISTAR POR ID</a>
+</div>
+
+<br />
+
+<div id="escola">
+	<% for (const pessoa of model) { %>
+		
+	<p>
+		<%= pessoa.idEstudante %> : <%= pessoa.nomeCompleto %> - <%= pessoa.nomeEscola %> |
+	</p>
+	<% } %>
+</div>
+
+<%- include("../rodape") %>

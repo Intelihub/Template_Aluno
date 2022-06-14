@@ -1,8 +1,16 @@
-﻿api = 'http://127.0.0.1:3071'
+﻿// USADO COM app_713.js
+api = 'http://127.0.0.1:3071'
 
 
 $(document).ready(() => {
-    usersx.list();
+    $("#bt1").click(function(e){
+        usersx.list();
+    });
+    $("#bt2").click(
+        function(e){
+            users.list();
+        }        
+    );
 });
 
 
@@ -24,7 +32,7 @@ var users = {
                         tx += '</div>';
                     tx += '</div>';
                 });
-                $('#main').html(tx);
+                $('#LISTA').html(tx);
             }
         });
         
@@ -47,7 +55,7 @@ var usersx = {
                         tx += '<div class="title">' + element.title + '</div>';
                         tx += '</div>';
                 });
-                $('#main').html(tx);
+                $('#LISTA').html(tx);
             }
         });
         

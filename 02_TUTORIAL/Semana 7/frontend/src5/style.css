@@ -22,8 +22,13 @@ h1{
 	text-align: center;
 }
 
-.sections{
-	padding: 3em;
+
+
+.user {
+	padding: 1rem;
+	margin: 1rem;
+	background-color: #F0F0F0;
+	text-align: left;
 }
 
 

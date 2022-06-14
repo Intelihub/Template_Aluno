@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	background-color: antiquewhite;
+}
+
+#main {
+	width: 99%;
+	margin: 0 auto;
+	background-color:beige;
+}
+#logo {
+	width: 100%;
+	background-color:aquamarine;
+	min-height: 20vh;
+}
+#menu {
+	float: left;
+	width: 20%;
+	background-color: cadetblue;
+	min-height: 100vh;
+}
+#menu a {
+	color: aliceblue;
+}
+#menu a:hover {
+	color: burlywood;
+}
+#content {
+	float: right;
+	width: 80%;
+	background-color: gainsboro;
+	min-height: 100vh;
+}
+
+#grafico {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#rodape {
+	width: 99%;
+	margin: 0 auto;
+	background-color: coral;
+	color: white;
+	text-align: center;
+	clear: both;
+}
+

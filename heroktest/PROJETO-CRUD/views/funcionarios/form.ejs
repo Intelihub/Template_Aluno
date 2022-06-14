@@ -1,0 +1,21 @@
+<%- include("../cabecalho") %>
+
+<form method="POST">
+	<input type="hidden" name="id" value="<%= funcionario.id %>" />
+
+	<div>
+		<label for="nome">Nome</label>
+		<input type="text" id="nome" name="nome" value="<%= funcionario.nome %>" />
+	</div>
+
+	<div>
+		<label for="email">E-mail</label>
+		<input type="text" id="email" name="email" value="<%= funcionario.email %>" />
+	</div>
+
+	<button type="submit">SALVAR</button>
+</form>
+
+<a href="/funcionarios/listar">VOLTAR</a>
+
+<%- include("../rodape") %>

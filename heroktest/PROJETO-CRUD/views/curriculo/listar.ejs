@@ -1,0 +1,14 @@
+<%- include("../cabecalho") %>
+<div class="curriculo">
+	CATEGORIA 1
+	<% for (const itens1 of model1) { %>
+		<p><%= itens1.idCurriculo %> : <%= itens1.item %> - <%= itens1.descricao %> </p>
+	<% } %>	
+</div>
+<div class="curriculo">
+	CATEGORA 2
+	<% for (const itens2 of model2) { %>
+		<p><%= itens2.idCurriculo %> : <%= itens2.item %> - <%= itens2.descricao %> - </p>	
+	<% } %>	
+</div>
+<%- include("../rodape") %>

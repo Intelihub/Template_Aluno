@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		How to get values from html input
+		array using JavaScript ?
+	</title>
+</head>
+
+<body style="text-align: center;">
+	
+	<h1 style="color: green;">
+		GeeksforGeeks
+	</h1>
+
+	<h3 id="po">Input Array Elements</h3>
+	<form class="" action="index.html" method="post">
+		<input type="text" name="array[]" value="" /><br>
+		<input type="text" name="array[]" value="" /><br>
+		<input type="text" name="array[]" value="" /><br>
+		<input type="text" name="array[]" value="" /><br>
+		<input type="text" name="array[]" value="" /><br>
+		<button type="button" name="button" onclick="Geeks()">
+			Submit
+		</button>
+	</form>
+	<br>
+
+	<p id="par"></p>
+
+	<script>
+		var k = "The respective values are :";
+        function criaInput() {
+            var inputs = parseInt(document.getElementById('qtd').value);
+            var saida = "<form>"
+            for(let i= 0;i<inputs;i++){
+                saida += 'Nota:'+ i +': <input type="number" name="nota[]"><br>';
+            }
+            saida += '<input type="button" name="botao" value="SOMA" onclick="somaInput();">';
+    
+            saida += "</form>";
+            document.getElementById('saida').innerHTML = saida;
+        }
+		function somaInput() {
+			var input = document.getElementsByName('nota[]');
+            var soma = 0;
+			for (var i = 0; i < input.length; i++) {
+                soma += parseInt(input[i].value);
+			}
+
+			document.getElementById("total").innerHTML = soma;
+		}
+	</script>
+
+    <form>
+        Quantas notas?:<input name="qtd" id="qtd" value=""><br>
+        <input type="button" name="botao" value="CRIA" onclick="criaInput();">
+     </form>  
+     <div id="saida">
+
+     </div> 
+     <div id="total">
+
+     </div>
+</body>
+
+</html>

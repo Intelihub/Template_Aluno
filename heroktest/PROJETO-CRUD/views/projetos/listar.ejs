@@ -1,0 +1,27 @@
+<%- include("../cabecalho") %>
+
+<div>
+	<a href="/funcionarios/listar?ordenar=nome">LISTAR POR NOME</a> |
+	<a href="/funcionarios/listar?ordenar=email">LISTAR POR EMAIL</a> |
+	<a href="/funcionarios/listar?ordenar=id">LISTAR POR ID</a>
+</div>
+
+<br />
+
+<div id="funcionarios">
+	<% for (const pessoa of model) { %>
+		
+	<p <% if (pessoa.id > 5) { %> style="background-color: #cecece" <% } %> <% if (pessoa.id <= 5) { %> style="background-color: #ff0" <% } %>>
+		
+	
+		
+		<%= pessoa.nome %> - <%= pessoa.email %> |
+		<a 
+		
+			href="/funcionarios/alterar?id=<%= pessoa.id %>">ALTERAR</a> |
+		<a href="/funcionarios/remover?id=<%= pessoa.id %>">REMOVER</a>
+	</p>
+	<% } %>
+</div>
+
+<%- include("../rodape") %>

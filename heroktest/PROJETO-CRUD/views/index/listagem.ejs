@@ -1,0 +1,12 @@
+<%- include("../cabecalho") %>
+
+<ul>
+	<% for (const pessoa of model) { %>
+	<li>
+		<%= pessoa.id %>
+		<em>(<%= pessoa.nome %>) - <%= pessoa.email %></em>
+	</li>
+	<% } %>
+</ul>
+
+<%- include("../rodape") %>

@@ -5,8 +5,9 @@ const hostname = '127.0.0.1';
 
 const port = 3061;
 const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3
 const app = express();
-const DBPATH = 'backend/dbIgor.db';
+const DBPATH = '/backend/dbIgor.db';
 
 app.use(express.static("../frontend/"));
 

@@ -42,10 +42,11 @@
             </div>
          </div>
          <script>
-            const app = "http://127.0.0.1:3061";
+            const app = "http://127.0.0.1:3061"; //Define o http padrão
 
-            $(document).ready(() => igorINFO.infos());
+            $(document).ready(() => igorINFO.infos()); //Chama a funcão quando o documento carregar
 
+            //Pega os elementos da tabela do DB Browser, e os escreve nas ids
             var igorINFO = {
                 infos(){
                     $.ajax({
@@ -68,6 +69,7 @@
         </script>
         
         <script>
+            //Muda o tema de fundo do currículo
             $('label').click(function(){
                 $('body').toggleClass('theme-dark');
                 $('.subtitle').toggleClass('sub-dark')

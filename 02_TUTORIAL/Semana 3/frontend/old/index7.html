@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, 
+	           initial-scale=1, maximum-scale=1" />
+	<title>Etapa 2</title>
+	<link rel="stylesheet" href="style7.css" />	
+	<script>
+		var listaNumeros = [];
+		function novoNumero(){
+			var a = Number(document.getElementById("nrpacotes").value);
+			listaNumeros.push(a);
+		}
+		function SomaTodos(){
+			var total = 0;
+			for (var indice=0; indice < listaNumeros.length; indice++){
+				total += Number(listaNumeros[indice]);
+			}				
+			document.getElementById("total").textContent = total;
+		}
+	</script>
+</head>
+<body>
+	<div id="main">
+		<h1> Pagina Aula 03 - Ex2 </h1>
+	</div>
+	<div>
+		<h2> Nr Pacotes: <input id="nrpacotes" type="text" value="0"/> </h2> 
+		<input type="button" value="Novo Pacote" onclick="novoNumero()" />	
+	</div>
+	<div>
+		<h2 id="total">0</h2> 
+		<input type="button" value="Total de Pacotes" onclick="SomaTodos()" />
+	</div>	
+</body>
+</html>

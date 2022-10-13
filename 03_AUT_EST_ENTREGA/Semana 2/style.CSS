@@ -1,0 +1,16 @@
+#start {
+    margin-left: 20px;
+}
+
+#subtitle {
+    text-align: center;
+    background-color: gray;
+}
+
+#gradient{
+    background-image: linear-gradient(white, rgb(170, 170, 170));
+}
+
+p {
+    margin-left: 20px;
+  }

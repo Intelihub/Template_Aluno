@@ -1,0 +1,65 @@
+html,
+.theme-light {
+  --bg-color: #fff;
+  --text-color: #123;
+  --label-color: #123
+
+}
+.theme-dark {
+  --bg-color: #121212;
+  --text-color: #45ADFE;
+  --label-color: #45ADFE
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: var(--label-color);
+	border-radius: 50px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+#start {
+    margin-left: 20px;
+}
+
+#subtitle {
+    text-align: center;
+    background-color: gray;
+}
+
+p {
+    margin-left: 20px;
+  }
